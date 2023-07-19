@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <title>IRCTC</title>
+</head>
+<body>
+    <section>
+      <nav class="navbar bg-body-tertiary" aria-label="Light offcanvas navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./Images/secondary-logo.png" alt="secondary-logo" style="position: relative; left: 100%" height="67"/></a>
+          <img id="logo" src="./Images/logo.png" alt="irctc-logo" height="67"/>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarLight" aria-controls="offcanvasNavbarLight" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarLight" aria-labelledby="offcanvasNavbarLightLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLightLabel"><button type="button" class="btn btn-primary btn-nav" style="font-weight: 600;"><a href="./login.html"><label style="color:white;">LOGIN</label></a></button></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#" style="font-weight: 600;"><button type="button" class="btn btn-primary btn-nav" style="font-weight: 600;">IRCTC EXCLUSIVE</button></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: 600;">
+                    TRAINS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Connecting Journey Booking</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">IRCTC TRAINS</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Cancel Ticket</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Train Enquiry</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Track Your Train</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="font-weight: 600;">BUSES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="font-weight: 600;">FLIGHTS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="font-weight: 600;">HOTELS</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: 600;">
+                    HOLIDAYS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Tourist Train</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Tour Packages</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Stays</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: 600;">
+                    MEALS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Order Food - E-Catering</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Cooked Food Menu</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: 600;">
+                    PROMOTIONS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Advertise with us</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">IRCTC Rail Connect App</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">IRCTC Tourism App</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">IRCTC Air App</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">UTS TICKET APP</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Rail Drishti</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="font-weight: 600;">ALERTS</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: 600;">
+                    MORE
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Link Your Aadhaar</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Counter Ticket Cancellation</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Counter Ticket Boarding Point Change</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">FORGOT ACCOUNT DETAILS?</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="font-weight: 600;">CONTACT US</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: 600;">
+                    AGENT LOGIN
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Agent OTP Login</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Agent DC Login</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="font-weight: 600;">ASK DISHA</a>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section id = "booking-area">
+        <div class="container" id="booking-options">
+            <div class="buttons">
+                <a href="pnr.html" style="color:white;"><button type="button" class="btn btn-primary"><img src="./Images/pnr.png" alt="pnr"/> <label>PNR STATUS</label></button></a>
+                <a href="chart.html" style="color:white;"><button type="button" class="btn btn-primary"><img src="./Images/chart.png" alt="chart"/> <label>CHARTS/VACANCY</label></button></a>
+            </div>
+            <div id="book-ticket-text">
+                <img src="./Images/azadi.jpg" />
+                <h2 id="book-ticket-text-title">  BOOK TICKET  </h2>
+                <img src="./Images/G20_Logo.png" />
+            </div>
+            <div id ="ticket-form">
+                  <form>
+                    <div class="form-row form-fill">
+                      <div class="col form-input">
+                        <label for="formGroupExampleInput">Source</label>
+                        <input type="text" class="form-control" placeholder="From">
+                      </div>
+
+                      <div class="col md-form md-outline input-with-post-icon datepicker form-input">
+                        <label for="example">Date</label>
+                        <input placeholder="Select date" type="date" id="example" class="form-control">
+                      </div>
+
+                      <div class="col form-input">
+                        <label for="formGroupExampleInput">Destination</label>
+                        <input type="text" class="form-control" placeholder="To">
+                      </div>
+                    
+                      <div id="class-select" class=" form-group">
+                        <select class="custom-select custom-select-lg mb-3 select-box">
+                            <option selected>All classes</option>
+                            <option value="1">Anubhuti Class (EA) </option>
+                            <option value="2">AC First Class (1A)</option>
+                            <option value="3">Vistadome AC (EV)</option>
+                            <option value="4">Exec. Chair Car (EC)</option>
+                            <option value="5">AC 2 Tier (2A)</option>
+                            <option value="6">First Class (FC)</option>
+                            <option value="7">AC 3 Tier (3A)</option>
+                            <option value="8">AC 3 Economy (3E)</option>
+                            <option value="9">Vistadome Chair Car</option>
+                            <option value="10">AC Chair Car (CC)</option>
+                            <option value="11">Sleeper (SL)</option>
+                            <option value="12">Vistadome Non AC (VS)</option>
+                            <option value="13">Second Sitting (2S)</option>
+                          </select>
+                      </div>
+
+                      <div class="form-group">
+                        <select class="custom-select custom-select-lg mb-3 select-box">
+                            <option value="">GENERAL</option>
+                            <option value="1">LADIES</option>
+                            <option value="2">LOWER BERTH/SR.CITIZEN</option>
+                            <option value="3">PERSON WITH DISABILITY</option>
+                            <option value="4">TATKAL</option>
+                            <option value="4">PREMIUM TATKAL</option>
+                          </select>
+                      </div>
+                    </div>
+
+                    <div id="checkboxes">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1" style="font-family:serif; font-weight: 600; color:#213d77;">Person With Disability Concession</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1" style="font-family:serif; font-weight: 600; color:#213d77;">Flexible with Label</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1" style="font-family:serif; font-weight: 600; color:#213d77;">Train with Available Berth</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1" style="font-family:serif; font-weight: 600; color:#213d77;">Railway Pass Connection</label>
+                        </div>
+                    </div>
+                  </form>
+                  <div class = "search-button-div">
+                    <button type="button" class="btn btn-danger"> Search</button>
+                    <button type="button" class="btn btn-success ask-disha-btn"> Try asking ASK DISHA 2.0</button>
+                  </div>
+            </div>
+            <div id="instructions">
+                <p style="color: red; font-family: Arial, Helvetica, sans-serif; font-weight: 600; padding-bottom: 1%;">Customers are requested to contact only on IRCTC's authorised contact no./Email id (Contact No.:14646 OR 0755-6610661 / 0755-4090600, Email: care@irctc.co.in), for assistance regarding ticket booking, refund or forgot user-id/password. Beware of fraudulent sites offering assistance.<br/> 
+                    <span style="color: blue; font-family: Arial, Helvetica, sans-serif; font-weight: 600;">Please check the alert section regarding restoration of AC 3-tier economy fare.</span>
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="links">
+        <div style="padding: 3.75%;">
+            <h2 style="text-align: center;">Have you not found the right one?</br>
+                Find a service suitable for you here.
+            </h2>
+        </div>
+
+        <div id ="servicesIcon">
+          <div class="flightIcon">
+            <a href="https://www.air.irctc.co.in/">
+              <label style="color: black;">FLIGHTS</label><img src="./Images/flight.svg" height="150"/>
+            </a>
+          </div>
+
+          <div class="flightIcon">
+            <a href="https://hotel.irctctourism.com/hotel">
+              <label style="color: black;">HOTELS</label><img src="./Images/hotels.svg" height="150"/>
+            </a>
+          </div>
+
+          <div class="longIcon">
+            <a href="https://raildrishti.indianrailways.gov.in/raildrishti/raildrishtiv3/">
+              <label style="color: black;">RAIL DRISHTI</label><img src="./Images/raildrishti5.svg" height="150"/>
+            </a>
+          </div>
+
+          <div class="longIcon">
+            <a href="https://www.ecatering.irctc.co.in/">
+              <label style="color: black;">E-CATERING</label><img src="./Images/ecatering.svg" height="150"/>
+            </a>
+          </div>
+
+          <div class="busIcon">
+            <a href="https://www.bus.irctc.co.in/home">
+              <label style="color: black;">BUS</label><img src="./Images/bus.svg" height="150"/>
+            </a>
+          </div>
+
+        </div>
+
+        
+        <div id ="servicesIconbtm">
+          <div class="flightIcon">
+            <a href="https://www.irctctourism.com/tourpacakage_search?searchKey=&tagType=&travelType=&category=">
+              <label style="color: black; position: relative; left: 29%;">HOLIDAYS</label><img src="./Images/holidays.svg" height="150"/>
+            </a>
+          </div>
+
+          <div class="longIcon">
+            <a href="https://www.irctctourism.com/bharatgaurav">
+              <label style="color: black;position: relative; left: 22%;">TOURIST TRAINS</label><img src="./Images/train.svg" height="150"/>
+            </a>
+          </div>
+
+          <div class="longIcon">
+            <a href="https://www.irctctourism.com/gallery/">
+              <label style="color: black;">HILL RAILWAYS</label><img src="./Images/mountrail.svg" height="150"/>
+            </a>
+          </div>
+
+          <div class="longIcon">
+            <a href="https://www.ftr.irctc.co.in/ftr/">
+              <label style="color: black; position: relative; left: 24%;">CHARTER TRAIN</label><img src="./Images/metro.svg" height="150"/>
+            </a>
+          </div>
+
+          <div class="flightIcon">
+            <a href="https://www.irctctourism.com/gallery/">
+              <label style="color: black;">GALLERY</label><img src="./Images/gallery.svg" height="150"/>
+            </a>
+          </div>
+
+        </div>
+    </section>
+
+    <section >
+      <h2 style="text-align: center;padding-bottom: 2.5%;">HOLIDAYS</h2>
+      <div class="card-container">
+        <div class="card" style="width: 18rem;">
+          <img src="./Images/maharaja-exp.jpg" class="card-img-top" alt="maharaja-express">
+          <div class="card-body">
+            <h3 class="card-title">Maharaja Express</h3>
+            <p class="card-text">Redefining Royalty, Luxury and Comfort, Maharajas' express takes you on a sojourn to the era of bygone stately splendour of princely states. Sylvan furnishings, elegant ambience and modern amenities are amalgamated for an “Experience Unsurpassed”. It has been a winner of “World’s Leading Luxury train” by World Travel Awards consecutively for last six years.</p>
+            <a href="https://www.the-maharajas.com/" class="" style="font-weight: 700; color: black;"><label>Read More</label><img src="./Images/chevron-right.svg"/></a>
+          </div>
+        </div>
+  
+        <div class="card" style="width: 18rem;">
+          <img src="./Images/thailand.jpg" class="card-img-top" alt="thailand-buddha">
+          <div class="card-body">
+            <h3 class="card-title">International Packages</h3>
+            <p class="card-text">Best deals in International Holiday packages, handpicked by IRCTC, for Thailand, Dubai, Sri Lanka, Hong Kong, China, Macau, Bhutan, Nepal, U.K., Europe, USA, Australia etc. The packages are inclusive of sightseeing, meals, visa charges and overseas medical insurance to give you a hassle-free and memorable experience.</p>
+            <a href="https://www.irctctourism.com/" class="" style="font-weight: 700; color: black;"><label>Read More</label><img src="./Images/chevron-right.svg"/></a>
+          </div>
+        </div>
+  
+        <div class="card" style="width: 18rem;">
+          <img src="./Images/shikara-ride.jpg" class="card-img-top" alt="shikara">
+          <div class="card-body">
+            <h3 class="card-title">Domestic Air Packages</h3>
+            <p class="card-text">Be it the spiritual devotee seeking blessings of Tirupati, Shirdi or Mata Vaishno Devi or the leisure traveller wanting to relish the Blue mountains of North East, Sand-dunes of Rajasthan, Hamlets of Ladakh, Wonders of Himalayas, Serene lakes or Picturesque Islands, IRCTC has it all. Discover India through IRCTC!</p>
+            <a href="https://www.irctctourism.com/" class="" style="font-weight: 700; color: black;"><label>Read More</label><img src="./Images/chevron-right.svg"/></a>
+          </div>
+        </div>
+  
+        <div class="card" style="width: 18rem;">
+          <img src="./Images/bharat-gaurav.jpg" class="card-img-top" alt="bharat gaurav tourist train">
+          <div class="card-body">
+            <h3 class="card-title">Bharat Gaurav Tourist Train</h3>
+            <p class="card-text">IRCTC operates Bharat Gaurav Tourist Train having AC III-Tier accommodation on train specially designed to promote domestic tourism in India. This train runs on various theme based circuits covering pilgrimage and heritage destinations in its itinerary on a 5 days to 20 days trip and showcase India’s rich cultural heritage.</p>
+            <a href="https://www.irctctourism.com/bharatgaurav" class="" style="font-weight: 700; color: black;"><label>Read More</label><img src="./Images/chevron-right.svg"/></a>
+          </div>
+        </div>
+  
+        <div class="card" style="width: 18rem;">
+          <img src="./Images/manali2.jpg" class="card-img-top" alt="manali">
+          <div class="card-body">
+            <h3 class="card-title">Rail Tour Packages</h3>
+            <p class="card-text">IRCTC offers Exclusive Rail tour packages with confirmed train tickets, sight-seeing and meals for enchanting Nilgiri Mountains, Darjeeling, Kullu Manali, Kashmir, Gangtok or divine tours of Mata Vaishno Devi, Rameswaram, Madurai, Shirdi, Tirupati etc. Holiday packages/ Land packages to these destinations are also available.</p>
+            <a href="https://www.irctctourism.com/" class="" style="font-weight: 700; color: black;"><label>Read More</label><img src="./Images/chevron-right.svg"/></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="social-handles">
+      <div style="display:flex; justify-content: center; height:10vh; align-items: center;">
+        <h5 style="color:white;">Get connected with us on social networks</h5>
+      </div>
+      <div style="display:flex; justify-content: flex-start; height:10vh; align-items: center; gap: 1%;">
+        <a href="https://www.facebook.com/IRCTCofficial/"><img src="./Images/circle_facebook_logo_media_network_icon2.png" height="60"/></a>
+        <a href="https://www.youtube.com/c/IRCTCOFFICIAL"><img src="./Images/youtube_icon.png" height="60"/></a>
+        <a href="https://www.instagram.com/irctc.official/?igshid=yyg5byow704l"><img src="./Images/512_instagram_social media_social network_icon.png" height="60"/></a>
+        <a href="https://t.me/IRCTC_Official"><img src="./Images/telegram_logo_messenger_social_social media_icon.png" height="60"/></a>
+        <a href="https://www.linkedin.com/company/irctcofficial"><img src="./Images/linkedin_icon.png" height="60"/></a>
+        <a href="https://in.pinterest.com/irctcofficial/"><img src="./Images/inspiration_pin_pinned_pinterest_social network_icon.png" height="60"/></a>
+        <a href="https://www.tumblr.com/irctcofficial"><img src="./Images/tumblr_logo_social_social network_social media_icon.png" height="60"/></a>
+        <a href="https://twitter.com/IRCTCofficial"><img src="./Images/twitter_media_popular_social_icon.png" height="60"/></a>
+        <a href="https://www.kooapp.com/profile/irctcofficial"><img src="./Images/Koo.png" height="60"/></a>
+      </div>
+    </section>
+    <section id="footer-irctc">
+      <div class="container">
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-6 col-md-3 mb-3">
+              <ul class="nav flex-column">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">IRCTC Trains</a>
+                  <ul class="dropdown-menu footer-dd">
+                    <li><a class="dropdown-item" href="#">Salient Features</a></li>
+                    <li><a class="dropdown-item" href="#">Ticket Cancellations Rules</a></li>
+                    <li><a class="dropdown-item" href="#">Foreign Tourist T&C</a></li>
+                    <li><a class="dropdown-item" href="#">Group Booking T&C</a></li>
+                    <li><a class="dropdown-item" href="#">Travel Insurance Claim Process</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">General Information</a>
+                  <ul class="dropdown-menu footer-dd">
+                    <li><a class="dropdown-item" href="#">More info</a></li>
+                    <li><a class="dropdown-item" href="#">FAQs</a></li>
+                    <li><a class="dropdown-item" href="#">Terms and Conditions</a></li>
+                    <li><a class="dropdown-item" href="#">Travel Insurance T&C</a></li>
+                    <li><a class="dropdown-item" href="#">FTR T&C</a></li>
+                    <li><a class="dropdown-item" href="#">Scheme for issue of waitlisted E-tickets/a></li>
+                    <li><a class="dropdown-item" href="#">Protection against fraudulent emails</a></li>
+                    <li><a class="dropdown-item" href="#">General Guideline for SUVIDHA trains</a></li>
+                    <li><a class="dropdown-item" href="#">Current Booking Guideline</a></li>
+                    <li><a class="dropdown-item" href="#">Forgo Senior Citizen Concession-FAQ</a></li>
+                    <li><a class="dropdown-item" href="#">Trains at a Glance</a></li>
+                    <li><a class="dropdown-item" href="#">Guidelines for Boarding Station change</a></li>
+                    <li><a class="dropdown-item" href="#">Guideline for PASS Booking</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Important Information</a>
+                  <ul class="dropdown-menu footer-dd">
+                    <li><a class="dropdown-item" href="#">Bank Transaction Charges</a></li>
+                    <li><a class="dropdown-item" href="#">Women Sr. Citizen Concession</a></li>
+                    <li><a class="dropdown-item" href="#">VIKALP Scheme</a></li>
+                    <li><a class="dropdown-item" href="#">Travel Insurance (Incl. of GST)</a></li>
+                    <li><a class="dropdown-item" href="#">Browser Settings</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Agents</a>
+                  <ul class="dropdown-menu footer-dd">
+                    <li><a class="dropdown-item" href="#">IRCTC Authtorized Service Providers</a></li>
+                    <li><a class="dropdown-item" href="#">Digital Certificate Generation Process</a></li>
+                    <li><a class="dropdown-item" href="#">Blacklist Agent</a></li>
+                    <li><a class="dropdown-item" href="#">Registration Slip</a></li>
+                    <li><a class="dropdown-item" href="#">Requisition Slip</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Enquiries</a>
+                  <ul class="dropdown-menu footer-dd">
+                    <li><a class="dropdown-item" href="#">Reservation Enquiries</a></li>
+                    <li><a class="dropdown-item" href="#">PNR Enquiry</a></li>
+                    <li><a class="dropdown-item" href="#">Train Enquiry</a></li>
+                    <li><a class="dropdown-item" href="#">Train/Fare Accomodation</a></li>
+                    <li><a class="dropdown-item" href="#">Train Between Important Stations</a></li>
+                    <li><a class="dropdown-item" href="#">Railway Enquiry-139</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-3 mb-3">
+              <ul class="nav flex-column">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">How To</a>
+                  <ul class="dropdown-menu footer-dd">
+                    <li><a class="dropdown-item" href="#">Register</a></li>
+                    <li><a class="dropdown-item" href="#">Book E-ticket (PDF) (VIDEO)</a></li>
+                    <li><a class="dropdown-item" href="#">Book tatkal ticket</a></li>
+                    <li><a class="dropdown-item" href="#">Cancel E-ticket</a></li>
+                    <li><a class="dropdown-item" href="#">International/NRI User Registration</a></li>
+                    <li><a class="dropdown-item" href="#">Guide</a></li>
+                    <li><a class="dropdown-item" href="#">Change Boarding Point</a></li>
+                    <li><a class="dropdown-item" href="#">Link Your Aadhar</a></li>
+                    <li><a class="dropdown-item" href="#">File TDR</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">IRCTC Official App</a>
+                  <ul class="dropdown-menu footer-dd">
+                    <li><a class="dropdown-item" href="#">IRCTC Rail Connect (Android)</a></li>
+                    <li><a class="dropdown-item" href="#">IRCTC Rail (iOS)</a></li>
+                    <li><a class="dropdown-item" href="#">IRCTC Order Food (Android)</a></li>
+                    <li><a class="dropdown-item" href="#">IRCTC Order Food (iOS)</a></li>
+                    <li><a class="dropdown-item" href="#">IRCTC Tourism App</a></li>
+                    <li><a class="dropdown-item" href="#">IRCTC Air App (Android)</a></li>
+                    <li><a class="dropdown-item" href="#">IRCTC Air App (iOS)</a></li>
+                    <li><a class="dropdown-item" href="#">IRCTC iMudra (Android)</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Advertise with us</a>
+                  <ul class="dropdown-menu footer-dd">
+                    <li><a class="dropdown-item" href="#">IRCTC Marketing Statistics</a></li>
+                    <li><a class="dropdown-item" href="#">Banner-Advertisement</a></li>
+                    <li><a class="dropdown-item" href="#">Push Notifications</a></li>
+                    <li><a class="dropdown-item" href="#">Booking Mail Advertisement</a></li>
+                    <li><a class="dropdown-item" href="#">Cancellation Mail Advertisement</a></li>
+                    <li><a class="dropdown-item" href="#">Captcha Advertisement</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Refund Rules</a>
+                  <ul class="dropdown-menu footer-dd">
+                    <li><a class="dropdown-item" href="#">Ticket Cancellation & Refund Rules</a></li>
+                    <li><a class="dropdown-item" href="#">Refund Rule of Suvidha Train</a></li>
+                    <li><a class="dropdown-item" href="#">Refund Rule COVID19-RB</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Person With Disability Facilities</a>
+                  <ul class="dropdown-menu footer-dd">
+                    <li><a class="dropdown-item" href="#">Facilities for Person With Disability Users</a></li>
+                    <li><a class="dropdown-item" href="#">Facilities for Visually Impaired Users</a></li>
+                    <li><a class="dropdown-item" href="#">User Guide: Person With Disability Booking</a></li>
+                  </ul>
+                </li>
+                
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-3 mb-3">
+              <ul class="nav flex-column">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">IRCTC eWallet</a>
+                  <ul class="dropdown-menu footer-dd">
+                    <li><a class="dropdown-item" href="#">About</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">IRCTC Loyalty Program</a>
+                  <ul class="dropdown-menu footer-dd">
+                    <li><a class="dropdown-item" href="#">IRCTC SBI Loyalty Program</a></li>
+                    <li><a class="dropdown-item" href="#">IRCTC BOB Loyalty Program</a></li>
+                    <li><a class="dropdown-item" href="#">IRCTC HDFC Loyalty Program</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">IRCTC-iPAY Payment</a>
+                  <ul class="dropdown-menu footer-dd">
+                    <li><a class="dropdown-item" href="#">IRCTC-iPAY (PDF) (VIDEO)</a></li>
+                    <li><a class="dropdown-item" href="#">AutoPay</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">IRCTC Zone</a>
+                  <ul class="dropdown-menu footer-dd">
+                    <li><a class="dropdown-item" href="#">Jago yatri jago</a></li>
+                    <li><a class="dropdown-item" href="#">Jansankhya Sthirata Kosh</a></li>
+                    <li><a class="dropdown-item" href="#">Maharaja's Express</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="col-6 col-md-3 mb-3">
+              <ul class="nav flex-column">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">For Newly Migrated Agents</a>
+                  <ul class="dropdown-menu footer-dd">
+                    <li><a class="dropdown-item" href="#">Login Manual-from old site to new site</a></li>
+                    <li><a class="dropdown-item" href="#">Operating Manual for new e-ticketing website</a></li>
+                    <li><a class="dropdown-item" href="#">Operating Manual for Agent Interface Application</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Mobile Zone</a>
+                  <ul class="dropdown-menu footer-dd">
+                    <li><a class="dropdown-item" href="#">IRCTC Android App-IRCTC</a></li>
+                    <li><a class="dropdown-item" href="#">Rail Connect</a></li>
+                    <li><a class="dropdown-item" href="#">ClearTrip</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Policies</a>
+                  <ul class="dropdown-menu footer-dd">
+                    <li><a class="dropdown-item" href="#">Agents & Principal Service Providers Policies for Reserved e-Ticketing</a></li>
+                    <li><a class="dropdown-item" href="#">Payment Integration Policies for Reserved e-Ticketing</a></li>
+                    <li><a class="dropdown-item" href="#">Payment Integration Policies for Unreserved Ticketing</a></li>
+                    <li><a class="dropdown-item" href="#">Payment Integration Policies for e-Catering</a></li>
+                    <li><a class="dropdown-item" href="#">Marketing Policies</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Ask Disha ChatBot</a>
+                  <ul class="dropdown-menu footer-dd">
+                    <li><a class="dropdown-item" href="#">Services of Ask Disha ChatBot</a></li>
+                    <li><a class="dropdown-item" href="#">Features of Ask Disha ChatBot</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">About us</a>
+                  <ul class="dropdown-menu footer-dd">
+                    <li><a class="dropdown-item" href="#">Awards & Achievements</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          <!-- © -->
+        </footer>
+      </div>
+    </section>
+
+    <section>
+      <div style="display:flex; flex-direction:row; justify-content: space-between;">
+        <img src="./Images/security.png" alt="security"/>
+        <p style="text-align: right; padding-right: 2%; font-weight: 500;">Copyright Â© 2023 - www.irctc.co.in. All Rights Reserved</br>
+
+          Designed and Hosted by <a href="https://cris.org.in/crisweb/design1/index.jsp">CRIS Compatible Browsers</a></p>
+      </div>
+    </section>
+</body>
+</html>

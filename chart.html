@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chart.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <title>IRCTC</title>
+</head>
+<body>
+    <section>
+      <nav class="navbar bg-body-tertiary" aria-label="Light offcanvas navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./Images/secondary-logo.png" alt="secondary-logo" style="position: relative; left: 100%" height="67"/></a>
+          <h4 class="heading">RESERVATION CHART</h4>
+          <img id="logo" src="./Images/logo.png" alt="irctc-logo" height="67"/>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarLight" aria-controls="offcanvasNavbarLight" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarLight" aria-labelledby="offcanvasNavbarLightLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLightLabel"><button type="button" class="btn btn-primary btn-nav" style="font-weight: 600;"><a href="./login.html"><label style="color:white;">LOGIN</label></a></button></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#" style="font-weight: 600;"><button type="button" class="btn btn-primary btn-nav" style="font-weight: 600;">IRCTC EXCLUSIVE</button></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: 600;">
+                    TRAINS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Connecting Journey Booking</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">IRCTC TRAINS</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Cancel Ticket</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Train Enquiry</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Track Your Train</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="font-weight: 600;">BUSES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="font-weight: 600;">FLIGHTS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="font-weight: 600;">HOTELS</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: 600;">
+                    HOLIDAYS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Tourist Train</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Tour Packages</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Stays</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: 600;">
+                    MEALS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Order Food - E-Catering</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Cooked Food Menu</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: 600;">
+                    PROMOTIONS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Advertise with us</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">IRCTC Rail Connect App</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">IRCTC Tourism App</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">IRCTC Air App</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">UTS TICKET APP</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Rail Drishti</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="font-weight: 600;">ALERTS</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: 600;">
+                    MORE
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Link Your Aadhaar</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Counter Ticket Cancellation</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Counter Ticket Boarding Point Change</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">FORGOT ACCOUNT DETAILS?</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="font-weight: 600;">CONTACT US</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: 600;">
+                    AGENT LOGIN
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Agent OTP Login</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Agent DC Login</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="font-weight: 600;">ASK DISHA</a>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section id = "booking-area">
+        <div class="container" id="booking-options" style="padding-top: 3% !important; padding-bottom: 3%;">
+            <form>
+                <div>
+                    <h5 style="text-align: center; color: #337ab7; font-family: Arial, Helvetica, sans-serif; font-weight: 600;">Journey Details</h5>
+                </div>
+                <div class="form-row form-fill">
+                    <div class="col form-input" style="width: 500px;">
+                      <label for="formGroupExampleInput" style="font-family:Arial, Helvetica, sans-serif; font-weight: 500; color: #337ab7;">Source</label>
+                      <input type="text" class="form-control" placeholder="From">
+                    </div>
+
+                    <div class="col md-form md-outline input-with-post-icon datepicker form-input" style="width: 500px;">
+                      <label for="example" style="font-family:Arial, Helvetica, sans-serif; font-weight: 500; color: #337ab7;">Date</label>
+                      <input placeholder="Select date" type="date" id="example" class="form-control">
+                    </div>
+
+                    <div class="col form-input" style="width: 500px;">
+                      <label for="formGroupExampleInput" style="font-family:Arial, Helvetica, sans-serif; font-weight: 500; color: #337ab7;">Destination</label>
+                      <input type="text" class="form-control" placeholder="To">
+                    </div>
+
+                    <div>
+                        <button type="button" class="btn btn-primary btn-nav-chart" style="font-family:Arial, Helvetica, sans-serif;">Get Train Chart</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section>
+        <div id="footer">
+            <p>Copyright © 2023 - www.irctc.co.in All Rights Reserved<br/>
+
+                <span>Designed and Hosted by CRIS</span></p>
+        </div>
+    </section>
+</body>
+</html>
